@@ -22,6 +22,10 @@ footer {
     width: 250px;
 }
 
+.profile-image {
+    width: 250px;
+}
+
 header{
     background-color: lightgray;
     padding: 10px;

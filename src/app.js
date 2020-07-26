@@ -47,7 +47,8 @@ app.get('/about',(req,res)=>{
 app.get('/help',(req,res)=>{
     res.render('help',{
         title:'Help for Weather Application',
-        msg:'Go back to index to get a weather forecast'
+        msg:'Go back to index to get a weather forecast',
+        name:'Matthew Lock'
     })
 })
 
