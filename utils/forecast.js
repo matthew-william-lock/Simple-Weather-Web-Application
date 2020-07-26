@@ -8,7 +8,7 @@ const forecast = (latitude, longitude, callback) =>{
         } else if (response.body.error) {
             callback("Unable to find locaiton.",undefined)
         } else {
-            const weatherString = "The current temperature is " + response.body.current.temperature
+            const weatherString = "It is currently " + response.body.current.weather_descriptions[0]+" with a temperature of " + response.body.current.temperature+" °C. There is "+ response.body.current.precip+"% precipitation and the wind speed is "+response.body.current.wind_speed+ " km/h."
             callback(undefined, weatherString)
         }
     })

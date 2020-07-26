@@ -23,7 +23,8 @@ fetch('/weather?address=cape&town').then((response)=>{
 const forecast = (location)=>{
 
     // Show loading message
-    message.textContent='loading'
+    message.textContent='Loading...'
+    forecastMessage.textContent=''
 
     const url = '/weather?address=' + (location)
     fetch(url).then((response)=>{
