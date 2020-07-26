@@ -1,4 +1,4 @@
-# Simple Weather Application
+# [Simple Weather Application](https://hexdro-weather-application.herokuapp.com/)
 A simple weather web application was created using node.js and deployed using Heroku. The backend node.js code is responsible for servering the associated web pages, as well as acting as API endpoints in order to aquire perform the needed geocoding, and forecasting.
 
 ## Heroku
@@ -31,3 +31,7 @@ The next step is telling Heroku which file to run. We do this using the **script
 ...
 ```
 
+Finally we can push our files to Heroku to deploy the application
+```
+git push heroku master
+```
