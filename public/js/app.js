@@ -8,7 +8,7 @@ fetch('http://puzzle.mead.io/puzzle').then((response)=>{
 })
 
 // Fetch json data example ===============================================================
-fetch('http://localhost:3000/weather?address=cape&town').then((response)=>{
+fetch('/weather?address=cape&town').then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             console.log(data.error)
@@ -25,7 +25,7 @@ const forecast = (location)=>{
     // Show loading message
     message.textContent='loading'
 
-    const url = 'http://localhost:3000/weather?address=' + (location)
+    const url = '/weather?address=' + (location)
     fetch(url).then((response)=>{
     response.json().then((data)=>{
         if(data.error){

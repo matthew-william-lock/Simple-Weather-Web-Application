@@ -18,6 +18,9 @@ console.log(publicDirectory)
 // Instantiate the server
 const app = express()
 
+// Get port number
+const port = process.env.PORT || 3000 // Set by heroku, default to 3000 locally
+
 // Setup handlebars engine and views location
 app.set('view engine','hbs')
 app.set('views',viewsDirecory)
@@ -110,6 +113,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log('Server is up on port 3000')
+app.listen(port,()=>{
+    console.log('Server is up on port '+port)
 })
